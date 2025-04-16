@@ -12,6 +12,7 @@
         Console.WriteLine($"Nome: {Nome}");
         Console.WriteLine($"Artista: {Artista}");
         Console.WriteLine($"Duracao: {Duracao}");
+
         if(Disponivel)
         {
             Console.WriteLine("Essa musica esta disponivel");

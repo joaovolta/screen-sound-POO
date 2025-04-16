@@ -1,14 +1,13 @@
-﻿Musica musica1 =  new Musica();
-musica1.Nome = "Eu seguirei";
-musica1.Artista = "Frei Gilson";
-musica1.Duracao = 207;
-musica1.Disponivel = true;
+﻿Album albumDoQueen = new Album();
+albumDoQueen.Nome = "A night at the opera";
+
+Musica musica1 = new Musica();
+musica1.Nome = "Love of my life";
 
 Musica musica2 = new Musica();
-musica2.Nome = "Let it be";
-musica2.Artista = "Beatles";
-musica2.Duracao = 160;
-musica2.Disponivel = false;
+musica2.Nome = "Another one bites the dust";
 
-musica1.ExibeFichaTecnica();
-musica2.ExibeFichaTecnica();
+albumDoQueen.AdicionaMusica(musica1);
+albumDoQueen.AdicionaMusica(musica2);
+
+albumDoQueen.ExibeMusicasDoAlbum();
