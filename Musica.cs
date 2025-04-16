@@ -4,6 +4,7 @@
     public string Artista { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
+    public Genero Genero { get; set; }
     // A variavel utiliza =>, oque indica que a variavel esta somente para leitura (get)
     public string DescricaoResumida => $"A musica {Nome} pertence a banda/artista {Artista}";
 
@@ -12,6 +13,7 @@
         Console.WriteLine($"Nome: {Nome}");
         Console.WriteLine($"Artista: {Artista}");
         Console.WriteLine($"Duracao: {Duracao}");
+        Console.WriteLine($"Genero: {Genero}");
 
         if(Disponivel)
         {
